@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM 練習</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <main>
+    <section class="cart">
+      <h1>カートリスト</h1>
+      <table>
+        <thead>
+          <tr>
+            <td>項目</td>
+            <td>単価</td>
+            <td>数量</td>
+            <td>小計</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>プログミンク基礎</td>
+            <td>300</td>
+            <td><span id="item1Quantity">0</span>
+              <a href="#" class="addProduct" onclick="reduceProduct()">-</a>
+              <a href="#" class="addProduct" onclick="addProduct()">+</a>
+            </td>
+            <td><span id="item1Price">0</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="skillset">
+      <h1>学びたい技術</h1>
+      <input type="checkbox" class="skill" id="html" value="html"><label for="html">HTML</label>
+      <input type="checkbox" class="skill" id="css" value="css"><label for="css">CSS</label>
+      <input type="checkbox" class="skill" id="javascript" value="javascript"><label for="javascript">JavaScript</label>
+      <input type="checkbox" class="skill" id="git" value="git"><label for="git">Git</label>
+      <input type="checkbox" class="skill" id="ruby" value="ruby"><label for="ruby">Ruby</label>
+      <input type="checkbox" class="skill" id="ruby-on-rails" value="ruby-on-rails"><label for="ruby-on-rails">Ruby on Rails</label>
+      <a href="#" class="selectAll" onclick="selectAllSkills()">全部が欲しい</a>
+    </section>
+
+  </main>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
